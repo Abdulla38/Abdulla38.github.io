@@ -1,43 +1,32 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио Abdulla38</title>
-    <link rel="stylesheet" href="./styles/style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Личный сайт</h1>
-      <p>Который сделан на основе готового шаблона</p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Эта страница</a></li>
-          <li><a href="catalog.html">Другая страница</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <article>
-        <section>
-          <h2>Первая секция</h2>
-          <p>Она обо мне</p>
-          <img src="images/image.png" alt="Человек и пароход">
-          <p>Но может быть и о семантике, я пока не решил.</p>
-        </section>
-        <section>
-          <h2>Вторая секция</h2>
-          <p>Она тоже обо мне</p>
-        </section>
-        <section>
-          <h2>И третья</h2>
-          <p>Вы уже должны были начать догадываться.</p>
-        </section>
-      </article>
-    </main>
-    <footer>
-      <p>Сюда бы я вписал информацию об авторе и ссылки на другие сайты</p>
-    </footer>
-    <!-- сюда можно подключить jquery <script src="scripts/app.js" defer></script> -->
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <article>
+        <h1>Hello, World!</h1>
+        <p>Hello, World! I'm Abdulla, 17 year-old programmer. I'm simple man. </p>
+        <p>I'm learning computer science. I like computers, games, musics, and so on and so forth. I prefer cats than dogs, but I love all them.</p>
+        <p>I'm watching Tsoding. He's a great programmer and I want to be as good programmer as he is.</p> 
+        <p>I learned Python, Rust, and Go. However, I don't like Rust's syntax or Go's package manager, and Python is a bit too simple for me. So, I've decided to learn and use C. I chose it over C++ because C++ has a lot of features that I don't want to use </p>
+        <p>I have a github account - <a href="https://github.com/Abdulla38">https://github.com/Abdulla38</a>. Now, I'm working with 3 projects. It's a voice assistant, a computer science lib, a video game as requested by my little brother.</p> 
+        <p>You can support me contributing my projects.</p>
+        <footer>
+            <h2>Nice to meet you all.</h2>
+        </footer>
+    </article>
+    <div class="sidebar"><h1>SIDEBAR.You can support me contributing my projects.</h1></div>
+</body>
+<script>
+addEventListener('DOMContentLoaded', function() {
+    const socket = new WebSocket('ws://localhost:5000/websocket');
+    socket.addEventListener('message', function (event) {
+        socket.close();
+        window.location.reload();
+    });
+});
+</script>
 </html>
